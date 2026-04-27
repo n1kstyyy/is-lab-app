@@ -39,7 +39,7 @@ app.MapDelete("/api/notes/{id}", (int id) =>
 });
 
 app.MapGet("/health", () => new { status = "ok", time = DateTime.UtcNow });
-app.MapGet("/version", () => new { app = "IsLabApp", version = "1.0.0" });
+app.MapGet("/version", () => new { app = "IsLabApp", version = "1.0.1-lab11" });
 app.MapGet("/db/ping", () => new { db = "Not connected", status = "error" });
 
 app.Run();
